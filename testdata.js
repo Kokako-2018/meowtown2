@@ -1,17 +1,16 @@
-{
-   "animals":[
-     {"animal":"bear",
-     "image":"/images/Bear-Determined.jpg.jpg"},
-     {"animal":"bear",
-        "image":"/images/Bear-Family.jpg.jpg"},
-        {"animal":"bear",
-            "image":"/images/Bear-Hug.jpg.jpg"},
-            {"animal":"bear",
-                "image":"/images/Bear-Mocking-you.jpg.jpg"},
-                {"animal":"bear",
-                    "image":"/images/Bear-Said-Hello.jpg.jpg"},
-                    {"animal":"bear",
-                        "image":"/images/Bear-and-Bear.jpg.jpg"},
+var testData = [
+    {"animal":"cat",
+     "image":"/images/cat-confused.jpg"},
+     {"animal":"cat",
+        "image":"/images/cat-cute.jpg"},
+        {"animal":"cat",
+            "image":"/images/cat-determined.jpg"},
+            {"animal":"cat",
+                "image":"/images/cat-hungry.jpg"},
+                {"animal":"cat",
+                    "image":"/images/cat-relaxed.jpg"},
+                    {"animal":"cat",
+                        "image":"/images/cat-sleepy.jpg"},
     {"animal":"pug",
      "image":"/images/pug-flawless.png"},
      {"animal":"pug",
@@ -37,4 +36,4 @@
                     {"animal":"sloth",
                         "image":"/images/sloth-relaxed.jpg"}
 
-]}
+]
