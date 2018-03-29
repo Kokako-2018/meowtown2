@@ -1,0 +1,22 @@
+{
+  "name": "meowtown2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Kokako-2018/meowtown2.git",
+  "author": "Zach <ssb.pub.key.is@ZqH7Mctu/7DNInxuwl12ECjfrAKUX2tBLq1rOldNhg0=.ed25519>",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "jest": "^22.4.3",
+    "nodemon": "^1.17.2",
+    "supertest": "^3.0.0"
+  },
+  "scripts": {
+    "debug": "nodemon --inspect index --ignore data.json",
+    "test": "jest --watch --noStackTrace",
+    "start": "node index"
+  }
+}
