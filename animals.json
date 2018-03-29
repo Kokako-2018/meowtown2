@@ -1,5 +1,6 @@
-[
-    {"animal":"bear",
+{
+   "animals":[
+     {"animal":"bear",
      "image":"/images/Bear-Determined.jpg.jpg"},
      {"animal":"bear",
         "image":"/images/Bear-Family.jpg.jpg"},
@@ -36,4 +37,4 @@
                     {"animal":"sloth",
                         "image":"/images/sloth-relaxed.jpg"}
 
-]
+]}
