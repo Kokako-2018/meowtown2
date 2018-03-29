@@ -7,7 +7,7 @@ var server = express()
 
 // Middleware-- don't fully know what this means.
 server.engine('hbs', hbs({
-  //defaultLayout: 'main',
+  defaultLayout : 'main',
   extname: 'hbs'
 }))
 
@@ -28,8 +28,24 @@ var testAnimals = [
 
 server.get('/dev', function (req, res) {
   console.log(animals)
-  res.render('test', animals)
+
+  console.log('='.repeat(20))
+  var filteredAnimals = animals.animals.filter(function (animal){
+    return animal.animal == "pug"
+  })
+  console.log(filteredAnimals)
+  console.log('='.repeat(20))
+  res.render('test', {animals: filteredAnimals})
 })
+
+server.get('/done', function (req,res) {
+  res.render('done')
+})
+
+server.get('/images', function (req,res) {
+  res.render('images')
+})
+
 
 module.exports = server
 
