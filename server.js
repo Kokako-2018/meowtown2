@@ -6,7 +6,7 @@ var server = express()
 
 // Middleware-- don't fully know what this means.
 server.engine('hbs', hbs({
-  defaultLayout: 'main',
+  defaultLayout : 'main',
   extname: 'hbs'
 }))
 
@@ -15,8 +15,17 @@ server.use(express.static('public'))
 server.use(bodyParser.urlencoded({ extended: false }))
 
 server.get('/', function (req,res) {
-  res.send('hello world!')
+  res.render('home')
 })
+
+server.get('/done', function (req,res) {
+  res.render('done')
+})
+
+server.get('/images', function (req,res) {
+  res.render('images')
+})
+
 
 module.exports = server
 

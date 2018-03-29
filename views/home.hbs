@@ -1,0 +1,32 @@
+<div id="container">
+
+  <div class="title"><h1>Meowtown 2</h1></div>
+
+  <nav>
+    <ul>
+        <button type = "radio">Pugs</button>
+        <button type = "radio">Sloths</button>
+        <button type = "radio">Cats</button>
+    </ul>
+    {{!-- <ul>
+      <button type = "radio">Happy</button>
+      <button type = "radio">Cute</button>
+      <button type = "radio">Sad</button>
+      <button type = "radio">Hungry</button>
+      <button type = "radio">Flawless</button>
+    </ul> --}}
+  </nav>
+
+  <div id="animalnames">
+    <div class="animals">
+      <ul>
+        {{#each animal}}
+          <li>{{name}}</li>
+          <li>{{image}}</li>
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+
+</div>
+
