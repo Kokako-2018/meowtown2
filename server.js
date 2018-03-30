@@ -36,36 +36,36 @@ server.get('/images', function (req, res){
   }
   console.log('the arr is: ')
   console.log(arr)
+  console.log('='.repeat(60))
   var theChosen = animals.animals.filter(function(animal){
     for (let i = 0; i < arr.length; i++) {
       if (animal.species == arr[i])
       return animal.species == arr[i]
     }
   })
-  // console.log('theChosen is: ' + theChosen)
+
+  console.log('theChosen is: ')
+  console.log(theChosen)
+  randomise(theChosen)
+  console.log('theChosen is: ')
+  console.log(theChosen)
   res.render('images',{animals: theChosen})
 
 })
-
-
-server.get('/dev', function (req, res) {
-  console.log(animals)
-
-  console.log('='.repeat(60))
-  var filteredAnimals = animals.animals.filter(function (animal){
-    
-    return animal.species == "pug" || animal.species == "sloth"
-  })
-  console.log(filteredAnimals)
-  console.log('='.repeat(50))
-  res.render('images', {animals: filteredAnimals})
-})
-
 
 server.get('/done', function (req,res) {
   res.render('done')
 })
 
+function randomise(arr) {
+  for (var i = arr.length - 1; i > 0; i--) {
+    var j = Math.floor(Math.random() * (i + 1));
+    var temp = arr[i]
+    arr[i] = arr[j]
+    arr[j] = temp;
+    
+  }
+}
 
 module.exports = server
 
