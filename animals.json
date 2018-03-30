@@ -7,7 +7,7 @@
     {"species":"cat",
     "image":"/images/cat-determined.jpg"},
     {"species":"cat",
-    "image":"/images/cat-hungry.jpg"},
+    "image":"/images/cat-hungry.jpeg"},
     {"species":"cat",
     "image":"/images/cat-relaxed.jpg"},
     {"species":"cat",
@@ -15,7 +15,7 @@
     {"species":"pug",
     "image":"/images/pug-happy.png"},
     {"species":"pug",
-    "image":"/images/pug-happy.png"},
+    "image":"/images/pug-flawless.png"},
     {"species":"pug",
     "image":"/images/pug-hungry.png"},
     {"species":"pug",
@@ -35,6 +35,18 @@
     {"species":"sloth",
     "image":"/images/sloth-flawless.jpg"},
     {"species":"sloth",
-    "image":"/images/sloth-relaxed.jpg"}
+    "image":"/images/sloth-relaxed.jpg"},
+    {"species":"bear",
+    "image":"/images/Bear-Family.jpg.jpg"},
+    {"species":"bear",
+    "image":"/images/Bear-Hug.jpg.jpg"},
+    {"species":"bear",
+    "image":"/images/Bear-Mocking-you.jpg.jpg"},
+    {"species":"bear",
+    "image":"/images/Bear-Said-Hello.jpg.jpg"},
+    {"species":"bear",
+    "image":"/images/Bear-Determined.jpg.jpg"},
+    {"species":"bear",
+    "image":"/images/Bear-and-Bear.jpg.jpg"}
 
 ]}
