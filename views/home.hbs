@@ -2,12 +2,14 @@
 
   <div class="title"><h1>Meowtown 2</h1></div>
 
-  <nav>
-    <ul>
-        <button type = "radio">Pugs</button>
-        <button type = "radio">Sloths</button>
-        <button type = "radio">Cats</button>
-    </ul>
+  <form action="/images" method = "get">
+  <select name="species" multiple>
+  <option value ="pug">Pugs</option>
+  <option value ="sloth">Sloths</option>
+  <option value ="cat">Cats</option>
+  </select>
+  <input type="submit">
+  </form>
     {{!-- <ul>
       <button type = "radio">Happy</button>
       <button type = "radio">Cute</button>
@@ -17,7 +19,7 @@
     </ul> --}}
   </nav>
 
-  <div id="animalnames">
+  {{!-- <div id="animalnames">
     <div class="animals">
       <ul>
         {{#each animal}}
@@ -26,7 +28,7 @@
         {{/each}}
       </ul>
     </div>
-  </div>
+  </div> --}}
 
 </div>
 

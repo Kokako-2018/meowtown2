@@ -19,32 +19,51 @@ server.get('/', function (req,res) {
   res.render('home')
 })
 
-var testAnimals = [
-  {animal: 'bear'},
-  {animal: 'sloth'},
-  {animal: 'pug'}
-]
 //Dev Work, feel free to change the get functions up above tho.
+
+//when server gets a GET request to /images, render a page 
+//based off our images view, that displays eveyr image in the
+//animals.json in order
+server.get('/images', function (req, res){
+  var arr = []
+  console.log('req query is: ')
+  console.log(req.query)
+  if (typeof(req.query.species) != 'object'){
+    arr.push(req.query.species)
+    }
+  else{
+    arr = req.query.species
+  }
+  console.log('the arr is: ')
+  console.log(arr)
+  var theChosen = animals.animals.filter(function(animal){
+    for (let i = 0; i < arr.length; i++) {
+      if (animal.species == arr[i])
+      return animal.species == arr[i]
+    }
+  })
+  // console.log('theChosen is: ' + theChosen)
+  res.render('images',{animals: theChosen})
+
+})
+
 
 server.get('/dev', function (req, res) {
   console.log(animals)
 
-  console.log('='.repeat(20))
+  console.log('='.repeat(60))
   var filteredAnimals = animals.animals.filter(function (animal){
-    return animal.animal == "pug"
+    
+    return animal.species == "pug" || animal.species == "sloth"
   })
   console.log(filteredAnimals)
-  console.log('='.repeat(20))
-  res.render('test', {animals: filteredAnimals})
+  console.log('='.repeat(50))
+  res.render('images', {animals: filteredAnimals})
 })
 
 
 server.get('/done', function (req,res) {
   res.render('done')
-})
-
-server.get('/images', function (req,res) {
-  res.render('images')
 })
 
 
