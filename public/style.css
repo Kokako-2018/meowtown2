@@ -1,0 +1,72 @@
+.container {
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center
+    }
+    
+    .image {
+    width:600px;
+    height:600px;
+    margin-top: 4em;
+    margin-bottom: 4em;
+    }
+    
+    body{
+    font-family:Verdana, Geneva, sans-serif;
+    font-size:12px;
+    background-color: peachpuff;
+    }
+    
+    .label-text{
+    position:fixed;
+    top:48px;
+    right:105px;
+    visibility: visible;
+    color:rgb(153, 26, 26);
+    background:rgba(51,51,51,0.5);
+    display:table-cell;
+    vertical-align:middle;
+    padding:10px;
+    border-radius:3px;
+    }
+    
+    .label-arrow{
+    display:table-cell;
+    vertical-align:middle;
+    color:#333;
+    opacity:0.5;
+    }
+    
+    .float{
+    position:fixed;
+    width:60px;
+    height:60px;
+    top:40px;
+    right:40px;
+    border-radius:50px;
+    text-align:center;
+    box-shadow: 2px 2px 3px #999;
+    }
+    
+.goodbye{
+    color: teal;
+    font-size: 5em;
+}
+
+.done {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: teal;
+    position: fixed;
+    top: 2em;
+    right: 2em;
+    color: white;
+    font-size: 2em;
+}
+
+.title{
+    font-size: 3em;
+    color: teal;
+}
+
